@@ -246,3 +246,16 @@ BacktrackToFunctionStart(
 	IN PEFI_IMAGE_NT_HEADERS NtHeaders,
 	IN CONST UINT8* AddressInFunction
 	);
+
+inline
+UINTN
+EFIAPI
+NullPrint(
+	IN CONST CHAR16 *Format,
+	...
+	)
+{
+	(VOID)Format;
+	return 0;
+}
+#define Print(Format, ...) NullPrint(Format, ## __VA_ARGS__)
