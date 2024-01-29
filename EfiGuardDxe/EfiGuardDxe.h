@@ -223,7 +223,6 @@ extern KERNEL_PATCH_INFORMATION gKernelPatchInfo;
 #define PRINT_KERNEL_PATCH_MSG(Fmt, ...) \
 	do { \
 		gBlStatusPrint(Fmt, ##__VA_ARGS__); \
-		AppendKernelPatchMessage(Fmt, ##__VA_ARGS__); \
 	} while (FALSE)
 
 #ifdef __cplusplus
