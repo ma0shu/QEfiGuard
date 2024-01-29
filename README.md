@@ -1,3 +1,8 @@
+# What is QEfiGuard
+QEfiGuard is a quieter version of Mattiwatti/EfiGuard, which hide all the verbose output when booting. Working good in my machine, I won't provide further maintenance for this fork. 
+Note: As the loader show some options before startup every time, which is not expected, we only provide EfiGuardDxe.efi and it must be installed as UEFI Driver.
+
+
 # Overview
 EfiGuard is a portable x64 UEFI bootkit that patches the Windows boot manager, boot loader and kernel at boot time in order to disable PatchGuard and Driver Signature Enforcement (DSE).
 
